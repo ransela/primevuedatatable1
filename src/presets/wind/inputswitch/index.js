@@ -1,0 +1,7 @@
+export default {
+  root: ({props:e})=>({class:["inline-flex relative","shrink-0","rounded-2xl","h-5 w-9",{"opacity-60 select-none pointer-events-none cursor-default":e.disabled}]}),
+  slider: ({props:e})=>({class:["absolute top-0 left-0 right-0 bottom-0","rounded-2xl","before:absolute before:top-1/2","before:-mt-2","before:h-4 before:w-4","before:rounded-full","before:duration-200 before:transition before:ease-in-out","before:bg-surface-0 before:dark:bg-surface-900","before:shadow",{"before:transform before:translate-x-4":e.modelValue==e.trueValue},"border-2 border-transparent",{"bg-surface-200 dark:bg-surface-700":e.modelValue!=e.trueValue,"bg-primary-500 dark:bg-primary-400":e.modelValue==e.trueValue},{"peer-hover:bg-surface-300 dark:peer-hover:bg-surface-600 ":e.modelValue!=e.trueValue&&!e.disabled},{"peer-hover:bg-primary-600 dark:peer-hover:bg-surface-300 ":e.modelValue==e.trueValue&&!e.disabled},"peer-focus-visible:ring-2 peer-focus-visible:ring-primary-500 dark:peer-focus-visible:ring-primary-400","transition-colors duration-200","cursor-pointer"]}),
+  input: {
+    class: ["peer", "w-full ", "h-full", "absolute", "top-0 left-0", "z-10", "p-0", "m-0", "rounded", "border", "opacity-0", "rounded-md", "outline-none", "border-2 border-surface-300 dark:border-surface-700", "appareance-none"]
+  }
+}
